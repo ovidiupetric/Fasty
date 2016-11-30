@@ -5,15 +5,10 @@ PROJECT TITLE: Fasty
 PURPOSE OF PROJECT: Just for fun :)
 VERSION: 2.0.2 
 AUTHOR: Pop Alexandru Radu *** Get support here: minealex2244@gmail.com
-
 ***HOW TO START THIS PROJECT: Double-click on "project.greenfoot" and then 'Run'. IF ANY EXCEPTION OCCURS: Just delete res.txt file, run the project again and optionally click 'Reset' to input your name. This method will erase your data.
-
 ***USER INSTRUCTIONS: Radu has just got a new job: ambulance driver. But this is not as simple as it sounds. How fast are you to save the people? Please read README_RULES.TXT for more informations.
-
 ***HOTKEYS: Movement from arrows or WASD, P-pause, Q-use bonus powers.
-
 ***CREDITS: stackoverflow.com for an optimised properties loading and writing, Stoichiță Iulia Alexandra for giving me the idea to add a story ;)
-
 
 *****  CHANGELOG  ***** 
 
