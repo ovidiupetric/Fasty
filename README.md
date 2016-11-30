@@ -18,7 +18,7 @@ The contents of README.TXT:
 **CREDITS**: stackoverflow.com for an optimised properties loading and writing, Stoichiță Iulia Alexandra for giving me the idea to add a story ;)
 
 
-**  CHANGELOG  ** 
+**---CHANGELOG---** 
 
 **pre 1.0**
 
