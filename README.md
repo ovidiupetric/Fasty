@@ -1,7 +1,7 @@
 # Fasty
 This is my first game made in Greenfoot. It is born from testing of my knownledgements.
 The contents of README.TXT:
-*PROJECT TITLE*: Fasty
+**PROJECT TITLE**: Fasty
 
 **PURPOSE OF PROJECT**: Just for fun :)
 
