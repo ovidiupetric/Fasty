@@ -5,7 +5,7 @@ The contents of README.TXT:
 
 **PURPOSE OF PROJECT**: Just for fun :)
 
-**VERSION**: 2.0.2 
+**VERSION**: 2.1.1 
 
 **AUTHOR**: Pop Alexandru Radu *** Get support here: minealex2244@gmail.com
 
@@ -88,4 +88,4 @@ The contents of README.TXT:
 
 **v2.1.1**
 
--TODO: changing the game after level 150 ;)
+-changing the game after level 150 ;)

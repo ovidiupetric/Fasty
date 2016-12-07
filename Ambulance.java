@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class Ambulance extends Actor 
 {
-    int saved_people=0,people=0,level=0,level2,time_power=0,time_power_used=0,lives=0,new_chance=0,won=0;
+    int secret=0,saved_people=0,people=0,level=0,level2,time_power=0,time_power_used=0,lives=0,new_chance=0,won=0,ok=1,ok2=1;
     private int time = 720; //default is 720 for 12 seconds, for debug porposes change to 1200 for 20 seconds
     public void act()
     {
@@ -66,6 +66,12 @@ public class Ambulance extends Actor
             {
                 new_chance=1;
             }
+            if(Greenfoot.isKeyDown("l") && secret==1){
+                if(ok==1){
+                    saved_people++;
+                    ok=0;
+                }
+            }
             if(isTouching(Hospital.class))
             {
                 if(lives==0)
@@ -116,15 +122,20 @@ public class Ambulance extends Actor
             System.out.println("Oh sorry! I remeber now: I have level 3897256342658263. Good luck with that ;)");
             Greenfoot.stop();
         }
-        if(level==150 && saved_people==1) //OK guys calm down, I'm the OS >:)
+        if(level==150 && saved_people==5) //OK guys calm down, I'm the OS >:)
         {
             System.out.println("You know... I can make this game harder. What if you got fired? >:) This is your last day. No instructions from now.");
             Greenfoot.stop();
         }
-        if(level==151 && saved_people==1) //Shut up, I'm the energy B-)
+        if(level==151 && saved_people==5) //Shut up, I'm the energy B-)
         {
-            System.out.println("This game is really hard so you will fail. :) I will leave you now. I already won with my score.");
-            Greenfoot.stop();
+            if(ok2==1){
+                System.out.println("This game is really hard so you will fail. :) I will leave you now. Only a letter can help you.");
+                saved_people--;
+                secret=1;
+                ok2=0;
+                Greenfoot.stop();
+            }
         }
         //and another one, thanks for your patience
         File res_file = new File("res.txt");
