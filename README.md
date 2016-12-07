@@ -85,3 +85,7 @@ The contents of README.TXT:
 **v2.0.2**
 
 -hopefully fixed the object-in-building bug (building over building is NORMAL)
+
+**v2.1.1**
+
+-TODO: changing the game after level 150 ;)
