@@ -116,6 +116,16 @@ public class Ambulance extends Actor
             System.out.println("Oh sorry! I remeber now: I have level 3897256342658263. Good luck with that ;)");
             Greenfoot.stop();
         }
+        if(level==150 && saved_people==1) //OK guys calm down, I'm the OS >:)
+        {
+            System.out.println("You know... I can make this game harder. What if you got fired? >:) This is your last day. No instructions from now.");
+            Greenfoot.stop();
+        }
+        if(level==151 && saved_people==1) //Shut up, I'm the energy B-)
+        {
+            System.out.println("This game is really hard so you will fail. :) I will leave you now. I already won with my score.");
+            Greenfoot.stop();
+        }
         //and another one, thanks for your patience
         File res_file = new File("res.txt");
         try{
