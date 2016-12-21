@@ -1,5 +1,5 @@
 Welcome to Fasty! Let me tell you the game rules:
--Leave the world as it is (do not modify it only for debug porposes)
+-Leave the world as it is (modify it only for debug porposes)
 -You must be fast :)
 -I'll give you more informations while in game, so stay tuned (don't worry, I'll pause the game for you)
 -Enjoy
