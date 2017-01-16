@@ -5,7 +5,7 @@ This is my first game made in Greenfoot. It is born from testing of my knownledg
 
 **PURPOSE OF PROJECT**: Just for fun :)
 
-**VERSION**: 2.1.1 
+**VERSION**: 2.2.0 
 
 **AUTHOR**: Pop Alexandru Radu *** Get support here: minealex2244@gmail.com
 
@@ -13,9 +13,11 @@ This is my first game made in Greenfoot. It is born from testing of my knownledg
 
 **USER INSTRUCTIONS**: Radu has just got a new job: ambulance driver. But this is not as simple as it sounds. How fast are you to save the people? Please read README_RULES.TXT for more informations.
 
-**HOTKEYS**: Movement from arrows or WASD, P-pause, Q-use bonus powers.
+**MOVEMENT**: Arrows or WASD, P-pause, Q-use bonus time, E-use bonus life.
 
-**CREDITS**: stackoverflow.com for an optimised properties loading and writing, Stoichiță Iulia Alexandra for giving me the idea to add a story ;)
+**CREDITS**: stackoverflow.com for an optimised properties loading and writing, a friend for giving me the idea to add a story ;)
+
+**CONTRIBUTORS**: Ovidiu*
 
 
 **---CHANGELOG---** 
@@ -89,3 +91,7 @@ This is my first game made in Greenfoot. It is born from testing of my knownledg
 **v2.1.1**
 
 -changing the game after level 150 ;)
+
+**v2.2.0**
+
+-fixed no info bug at start forever
