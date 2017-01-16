@@ -3,8 +3,8 @@ import java.io.*;
 import java.util.*;
 
 /**
- * @Pop Alexandru Radu 
- * @2.1.1
+ * @Pop Alexandru Radu & @Petric Ovidiu Vasiliu
+ * @2.2.0
  */
 public class bg extends World
 {
