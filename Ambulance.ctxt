@@ -4,4 +4,6 @@ comment1.params=
 comment1.target=void\ act()
 comment2.params=
 comment2.target=void\ score()
-numComments=3
+comment3.params=w
+comment3.target=void\ addedToWorld(greenfoot.World)
+numComments=4

@@ -10,7 +10,6 @@ public class Ambulance extends Actor
     private int time = 720; //default is 720 for 12 seconds, for debug porposes change to 1200 for 20 seconds
     public void act()
     {
-        getWorld().showText("Level/saved/total " + level + "/" + saved_people + "/" + people,200,100);
         if (time>0 && won==0)
         {
             time--;
@@ -215,5 +214,25 @@ public class Ambulance extends Actor
         catch(IOException ioe2){
             System.out.println("Can't find 'res.txt'! This app should autocreate it, but if your system is not permissive create it manually.");
         }
+    }
+    public void addedToWorld(World w)
+    {
+        File res_file = new File("res.txt");
+        try{ //reading and parsing res.txt
+            FileInputStream in = new FileInputStream(res_file);
+            Properties prop = new Properties();
+            prop.load(in);
+            in.close();
+
+            FileOutputStream out = new FileOutputStream(res_file);
+            level = Integer.parseInt(prop.getProperty("level"));
+            people = Integer.parseInt(prop.getProperty("people")); //getting the value of people_string from res.txt (original value from bg.java)
+            prop.store(out, null);
+            out.close();
+        }
+        catch(IOException ioe2){
+            System.out.println("Can't find 'res.txt'! This app should autocreate it, but if your system is not permissive create it manually.");
+        }
+        getWorld().showText("Level/saved/total " + level + "/" + saved_people + "/" + people,200,100);
     }
 }
