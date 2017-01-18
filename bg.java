@@ -48,12 +48,12 @@ public class bg extends World
         FileOutputStream out = new FileOutputStream(res_file);
         prop.setProperty("people", people_string); //optimization to get this value between classes (bg.java and Ambulance.java)
         player_level=Integer.parseInt(prop.getProperty("level"));
-        if(player_level>=25){
+        if(player_level>=10){
             for(int i=0;i<5;i++){
                 int obstacle_x=Greenfoot.getRandomNumber(getWidth()-10);
                 int obstacle_y=Greenfoot.getRandomNumber(getHeight()-10);
                 //now checking if there is something underneath
-                if(getObjectsAt(obstacle_x,obstacle_y,Boy.class).isEmpty() && 
+                /*if(getObjectsAt(obstacle_x,obstacle_y,Boy.class).isEmpty() && 
                     getObjectsAt(obstacle_x+40,obstacle_y,Boy.class).isEmpty() && 
                     getObjectsAt(obstacle_x,obstacle_y+40,Boy.class).isEmpty() && 
                     getObjectsAt(obstacle_x-40,obstacle_y,Boy.class).isEmpty() && 
@@ -62,7 +62,7 @@ public class bg extends World
                     getObjectsAt(obstacle_x-40,obstacle_y-40,Boy.class).isEmpty() &&
                     getObjectsAt(obstacle_x+40,obstacle_y-40,Boy.class).isEmpty() &&
                     getObjectsAt(obstacle_x-40,obstacle_y+40,Boy.class).isEmpty() &&
-                    /*and now beggins the ambulance search*/ 
+                    and now beggins the ambulance search
                     getObjectsAt(obstacle_x,obstacle_y,Ambulance.class).isEmpty() && 
                     getObjectsAt(obstacle_x+50,obstacle_y,Ambulance.class).isEmpty() && 
                     getObjectsAt(obstacle_x,obstacle_y+50,Ambulance.class).isEmpty() && 
@@ -70,7 +70,7 @@ public class bg extends World
                     getObjectsAt(obstacle_x,obstacle_y-50,Ambulance.class).isEmpty() )
                         addObject(new Hospital(), obstacle_x, obstacle_y);
                 else
-                        i--;
+                        i--;*/
             }
         }
         try{
