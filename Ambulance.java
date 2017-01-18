@@ -208,7 +208,7 @@ public class Ambulance extends Actor
             out.close();
         }
         catch(IOException ioe2){
-            System.out.println("Can't find 'res.txt'! This app should autocreate it, but if your system is not permissive create it manually.");
+            System.out.println("Can't find 'res.txt'!");
         }
     }
     public void addedToWorld(World w)
