@@ -3,4 +3,4 @@ lives=1
 time_power=111
 people=23
 username=Player
-level=102
+level=27
