@@ -96,4 +96,4 @@ This is my first game made in Greenfoot. It is born from testing of my knownledg
 
 -fixed no info bug at start forever
 -lowered levels
--added expert mode after level 75 (10 buildings instead of 5)
+-added expert mode after level 30 (10 buildings instead of 5)
