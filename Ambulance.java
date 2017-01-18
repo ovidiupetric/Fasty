@@ -96,37 +96,37 @@ public class Ambulance extends Actor
     private void score() {
         saved_people++;
         //...just a delimiter
-        if(level==50) //I'm a notification :)
+        if(level==11) //I'm a notification :)
         {
             System.out.println("I needed to stop you!!! Sorry!");
             Greenfoot.stop();
         }
-        if(level==75) //Me too :D
+        if(level==12) //Me too :D
         {
             System.out.println("I told you that I come back...to annoy you, muahahaha >:)");
             Greenfoot.stop();
         }
-        if(level==100 && saved_people==9) //Don't forget me guys ;)
+        if(level==13 && saved_people==9) //Don't forget me guys ;)
         {
             System.out.println("I'm out! I hate you.");
             Greenfoot.stop();
         }
-        if(level==100 && saved_people==15) //You know, you're just a comment :/
+        if(level==13 && saved_people==15) //You know, you're just a comment :/
         {
             System.out.println("You have a better score than me :'( Please stop!");
             Greenfoot.stop();
         }
-        if(level==101 && saved_people==10) //I'm the compiler :) /*Actually not.*/
+        if(level==14 && saved_people==10) //I'm the compiler :) /*Actually not.*/
         {
             System.out.println("Oh sorry! I remeber now: I have level 3897256342658263. Good luck with that ;)");
             Greenfoot.stop();
         }
-        if(level==150 && saved_people==5) //OK guys calm down, I'm the OS >:)
+        if(level==14 && saved_people==5) //OK guys calm down, I'm the OS >:)
         {
-            System.out.println("You know... I can make this game harder. What if you got fired? >:) This is your last day. No instructions from now.");
+            System.out.println("You know... I can make this game harder. What if you got fired? >:) This is your last day.");
             Greenfoot.stop();
         }
-        if(level==151 && saved_people==5) //Shut up, I'm the energy B-)
+        if(level==26 && saved_people==5) //Shut up, I'm the energy B-)
         {
             if(ok2==1){
                 System.out.println("This game is really hard so you will fail. :) I will leave you now. Only a letter can help you.");
@@ -167,14 +167,14 @@ public class Ambulance extends Actor
                 level++;
                 String level_string = Integer.toString(level);
                 prop.setProperty("level", level_string);
-                if(level%10==0 && level!=0)
+                if(level%5==0 && level!=0)
                 {
                     time_power=Greenfoot.getRandomNumber(120)+60;
                     getWorld().showText("You got a bonus of " + time_power/60 + " seconds.",400,350); //below center
                     String time_power_string = Integer.toString(time_power);
                     prop.setProperty("time_power", time_power_string);
                 }
-                if(level%5==0 && level>=30)
+                if(level%10==0 && level>=10)
                 {
                     getWorld().showText("You got a new bonus chance.",400,375); //below center
                     prop.setProperty("lives", "1");
@@ -185,24 +185,20 @@ public class Ambulance extends Actor
                     System.out.println("***Good! You did it! I come back at level 10. Close me now.");
                     Greenfoot.stop();
                 }
+                if(level==5)
+                {
+                    System.out.println("***Level 5! Wow! You got a gift :). Look at the game text (below 'You won!'). You get that bonus from 5 to 5 levels. Use it with 'Q' and wisely!");
+                    Greenfoot.stop();
+                }
                 if(level==10)
                 {
-                    System.out.println("***Level 10! Wow! You got a gift :). Look at the game text (below 'You won!'). You get that bonus from 10 to 10 levels. Use it with 'Q' and wisely!");
-                    Greenfoot.stop();
-                }
-                if(level==25)
-                {
                     System.out.println("***Wow! I shall stop you because you're too good at this game. I put a lot of obstacles ;)");
+                    System.out.println("You know what? This is really hard for everyone (except me :D), I'll give you a new chance from 10 to 10 levels. Use it wisely with 'E'.");
                     Greenfoot.stop();
                 }
-                if(level==30)
+                if(level==15)
                 {
-                    System.out.println("***You know what? This is really hard for everyone (except me :D), I'll give you a new chance from 5 to 5 levels. Use it wisely with 'E'.");
-                    Greenfoot.stop();
-                }
-                if(level==50)
-                {
-                    System.out.println("Oh my God! You're still playing this game? I bet you can't reach level 75.");
+                    System.out.println("Oh my God! You're still playing this game? I bet you can't reach level 25.");
                     Greenfoot.stop();
                 }
                 //The END of notifications
@@ -231,7 +227,7 @@ public class Ambulance extends Actor
             out.close();
         }
         catch(IOException ioe2){
-            System.out.println("Can't find 'res.txt'! This app should autocreate it, but if your system is not permissive create it manually.");
+            System.out.println("Can't find 'res.txt'!");
         }
         getWorld().showText("Level/saved/total " + level + "/" + saved_people + "/" + people,200,100);
     }
