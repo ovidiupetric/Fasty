@@ -62,14 +62,13 @@ public class bg extends World
                     getObjectsAt(obstacle_x-40,obstacle_y-40,Boy.class).isEmpty() &&
                     getObjectsAt(obstacle_x+40,obstacle_y-40,Boy.class).isEmpty() &&
                     getObjectsAt(obstacle_x-40,obstacle_y+40,Boy.class).isEmpty() &&
-                    and now beggins the ambulance search
                     getObjectsAt(obstacle_x,obstacle_y,Ambulance.class).isEmpty() && 
                     getObjectsAt(obstacle_x+50,obstacle_y,Ambulance.class).isEmpty() && 
                     getObjectsAt(obstacle_x,obstacle_y+50,Ambulance.class).isEmpty() && 
                     getObjectsAt(obstacle_x-50,obstacle_y,Ambulance.class).isEmpty() && 
-                    getObjectsAt(obstacle_x,obstacle_y-50,Ambulance.class).isEmpty() )
+                    getObjectsAt(obstacle_x,obstacle_y-50,Ambulance.class).isEmpty() )*/
                         addObject(new Hospital(), obstacle_x, obstacle_y);
-                else
+                /*else
                         i--;*/
             }
         }
