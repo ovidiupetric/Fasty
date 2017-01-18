@@ -201,6 +201,11 @@ public class Ambulance extends Actor
                     System.out.println("Oh my God! You're still playing this game? I bet you can't reach level 25.");
                     Greenfoot.stop();
                 }
+                if(level==30)
+                {
+                    System.out.println("Now I made this game harder");
+                    Greenfoot.stop();
+                }
                 //The END of notifications
                 won=1;
             }
@@ -230,5 +235,10 @@ public class Ambulance extends Actor
             System.out.println("Can't find 'res.txt'!");
         }
         getWorld().showText("Level/saved/total " + level + "/" + saved_people + "/" + people,200,100);
+        if(level>=30)
+        for(int i=0;i<5;i++)
+        {
+            addObject(new Hospital(), Greenfoot.getRandomNumber(getWidth()-10), Greenfoot.getRandomNumber(getHeight()-10));
+        }
     }
 }
